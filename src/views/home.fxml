@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="781.0" prefWidth="1276.0" styleClass="background" stylesheets="@../cas/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Pane layoutX="41.0" layoutY="208.0" prefHeight="74.0" prefWidth="1180.0" styleClass="titlePane" stylesheets="@../cas/stylesheet.css">
+         <children>
+            <TextField fx:id="listSearch" layoutX="14.0" layoutY="11.0" prefHeight="52.0" prefWidth="1154.0" promptText="Filter by keyword" styleClass="textField" stylesheets="@../cas/stylesheet.css">
+               <font>
+                  <Font name="Gill Sans MT" size="23.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane layoutX="38.0" layoutY="119.0" prefHeight="74.0" prefWidth="1185.0" styleClass="titlePane" stylesheets="@../cas/stylesheet.css">
+         <children>
+            <TextField fx:id="movieSearch" layoutX="14.0" layoutY="11.0" prefHeight="52.0" prefWidth="1071.0" promptText="Search for a movie" styleClass="textField" stylesheets="@../cas/stylesheet.css">
+               <font>
+                  <Font name="Gill Sans MT" size="23.0" />
+               </font>
+            </TextField>
+            <Button layoutX="1091.0" layoutY="5.0" minWidth="50.0" mnemonicParsing="false" onAction="#findMovie" prefHeight="52.0" prefWidth="72.0" styleClass="searchBtn" stylesheets="@../cas/stylesheet.css">
+               <graphic>
+                  <ImageView fx:id="searchMovie" fitHeight="49.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="47.0" layoutY="314.0" prefHeight="434.0" prefWidth="1179.0" styleClass="titlePane" stylesheets="@../cas/stylesheet.css" />
+      <Pane layoutX="36.0" layoutY="16.0" prefHeight="87.0" prefWidth="1186.0" styleClass="titlePane" stylesheets="@../cas/stylesheet.css">
+         <children>
+            <Label layoutX="169.0" layoutY="-6.0" text="Abhinav's Movie Database">
+               <font>
+                  <Font name="Gill Sans MT" size="83.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#fdfdfd" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

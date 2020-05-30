@@ -1,0 +1,22 @@
+.background{
+    -fx-background-color: #2A2A7F;
+}
+.titlePane{
+     -fx-background-color: #161664;
+    -fx-background-radius: 15 15 15 15;
+}
+.table-view .column-header {
+    -fx-background-color: white;
+}
+.textField{
+    -fx-background-color: white;
+    -fx-background-radius: 15 15 15 15;
+}
+.searchBtn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 15 15 15 15;
+}
+.searchBtn:hover{
+     -fx-background-color: #2A2A7F;
+    -fx-background-radius: 15 15 15 15; 
+}
